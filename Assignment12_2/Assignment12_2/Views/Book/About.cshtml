@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center><h1>About us</h1> </center>
+
+
+
+    <div style="width: 100%;">
+        <div style="width: 50%; height: 100px; float: left;"> 
+        <dl class="align-middle">
+        @await Html.PartialAsync("_BookPartial")
+        </dl>
+        </div>
+        <div style="margin-left: 50%; height: 100px;"> 
+            <p>Hey, it's me again! We are doing this assignment on books, so a fun fact about me is that my husband and I have over 300 books in our house. We love to read! Reading makes us really happy. He likes to read American History and autobiographies (since he was a history major in college) and I like to read fiction, poetry, and books about social statuses. Honestly, I would like to use a book idea for my project, because we REALLY need to find a way to organize these things! </p>
+    <p>
+        Anyway...I'm sure there will be another about page, so maybe another fun fact at another time! See ya!<br />
+    </p>
+        <p></p>
+        <P></P>
+        </div>
+    </div>

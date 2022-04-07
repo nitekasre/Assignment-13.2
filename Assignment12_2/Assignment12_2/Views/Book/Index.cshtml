@@ -1,0 +1,31 @@
+﻿@model Assignment12_2.Models.IndexViewModel;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<center><h1>List of Books to Read/Re-Read in 2022</h1></center>
+<table class="table">
+    <thread>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model=>model.Books[0].Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model=>model.Books[0].Title)
+            </th>
+        </tr>
+    </thread>
+    <tbody>
+        @foreach(var item in Model.Books)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelitem=>item.Id)</td>
+                <td>@Html.DisplayFor(modelitem=>item.Title)</td>
+                <td><a asp-action="Details"asp-route-id="@item.Id">View More Information!</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
